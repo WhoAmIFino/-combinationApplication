@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="第一个"/>
+
+    <Button
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="第二个"/>
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/line_chart"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/local_imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/launch_location"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/local_imageview"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:id="@+id/linearlayout">
+            <TextView
+                android:layout_margin="1dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/mytextview"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="正在定位·····"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+      <RelativeLayout
+          android:layout_gravity="center"
+          android:layout_below="@+id/rela"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <ImageView
+              android:layout_marginTop="10dp"
+              android:id="@+id/local_imageview2"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_centerHorizontal="true"
+              android:src="@drawable/launch_location"
+              />
+
+
+              <TextView
+                  android:layout_below="@+id/local_imageview2"
+                  android:layout_margin="1dp"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:id="@+id/mytextview2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="30dp"
+                  android:text="正在定位·····"
+                  android:textColor="@color/white"
+                  />
+
+
+
+      </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

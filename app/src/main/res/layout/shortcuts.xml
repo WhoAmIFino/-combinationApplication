@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_emotion"
+        android:shortcutDisabledMessage="@string/settings_disable_msg"
+        android:shortcutId="settings"
+        android:shortcutLongLabel="@string/settings_long_name"
+        android:shortcutShortLabel="@string/settings_short_name">
+
+        <intent
+            android:action="test.shortcuts"
+            android:targetClass="test.com.actionbartest.MainActivity"
+            android:targetPackage="test.com.actionbartest"/>
+
+        <intent
+            android:action="test.shortcuts"
+            android:targetClass="test.com.actionbartest.SecondActivity"
+            android:targetPackage="test.com.actionbartest"/>
+
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+
+</shortcuts>
